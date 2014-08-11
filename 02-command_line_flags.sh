@@ -4,8 +4,8 @@
 # from http://www.shelldorado.com/goodcoding/cmdargs.html
 #
 
-vflag=off
-filename=
+v_flag=off
+file_name=
 while [ $# -gt 0 ]
 do
 	
@@ -13,8 +13,8 @@ do
   #echo "[$@]"
 
   case "$1" in
-		-v)  vflag=on;;
-		-f)  filename="$2"; shift;;
+		-v)  v_flag=on;;
+		-f)  file_name="$2"; shift;;
 		
 		# stop 
 		--)	shift; break;;
@@ -34,6 +34,6 @@ do
 done
 # all command line switches are processed,
 
-echo -e "-> vflag = $vflag"
-echo -e "-> filename = [$filename]"
-echo -e "-> files = [$@]"
+echo -e "-> v_flag = $v_flag"
+echo -e "-> file_name = [$file_name]"
+echo -e "-> all files = [$@]"
