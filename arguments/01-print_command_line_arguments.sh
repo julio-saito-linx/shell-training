@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #
-# from http://www.shelldorado.com/goodcoding/cmdargs.html
-#
+# from: http://www.shelldorado.com/goodcoding/cmdargs.html
+# more: http://wiki.bash-hackers.org/scripting/posparams
 
 # cmdtest - print command line arguments
 

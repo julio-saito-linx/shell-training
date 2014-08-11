@@ -1,8 +1,8 @@
 #!/bin/bash
 
 #
-# from http://www.shelldorado.com/goodcoding/cmdargs.html
-#
+# from:  http://www.shelldorado.com/goodcoding/cmdargs.html
+# other: http://wiki.bash-hackers.org/howto/getopts_tutorial
 
 v_flag=off
 file_name=

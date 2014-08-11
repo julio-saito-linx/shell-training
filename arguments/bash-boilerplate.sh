@@ -3,6 +3,8 @@
 # A lot of this is based on options.bash by Daniel Mills.
 # @see https://github.com/e36freak/tools/blob/master/options.bash
 
+# from: https://github.com/oxyc/bash-boilerplate
+
 # Preamble {{{
 
 # Exit immediately on error
@@ -91,6 +93,14 @@ rollback() {
 # Put your script here
 main() {
   echo -n
+
+  echo -e "   ***** FINAL RESULT *****"
+  echo -e "--> force        = [$force]"
+  echo -e "--> quiet        = [$quiet]"
+  echo -e "--> verbose      = [$verbose]"
+  echo -e "--> interactive  = [$interactive]"
+  echo -e "--> args         = [$args]"
+  echo -e "--> piped        = [$piped]"
 }
 
 # }}}
@@ -211,7 +221,7 @@ args+=("$@")
 # Run it {{{
 
 # Uncomment this line if the script requires root privileges.
-# [[ $UID -ne 0 ]] && die "You need to be root to run this script"
+#[[ $UID -ne 0 ]] && die "You need to be root to run this script"
 
 if ((interactive)); then
   prompt_options
